@@ -7,7 +7,7 @@ const fs = require('fs')
 
 db["abc"] = "funny";
 
-let newfile = file;
+let newfile = config.file;
 if (newfile.startsWith("./")){
   newfile.replace("./","");
 }
