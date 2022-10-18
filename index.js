@@ -11,4 +11,4 @@ let newfile = config.file;
 if (newfile.startsWith("./")){
   newfile.replace("./","");
 }
-fs.writeFileSync(newfile,JSON.stringify(db),"utf-8")
+fs.writeFileSync(newfile,JSON.stringify(db,null,2),"utf-8")
